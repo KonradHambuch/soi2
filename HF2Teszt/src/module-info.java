@@ -1,0 +1,3 @@
+module HF2Teszt
+{
+}

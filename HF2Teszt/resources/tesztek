@@ -1,0 +1,215 @@
+GET /Rest_NEPTUN/resources/MovieDatabase/movies
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movies/>
+GET /Rest_NEPTUN/resources/MovieDatabase/movies
+Accept: application/json
+
+{"movie":[]}
+POST /Rest_NEPTUN/resources/MovieDatabase/movies
+Accept: application/xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>Inception</title><year>2010</year><director>Christopher Nolan</director><actor>Leonardo DiCaprio</actor></movie>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><result><id>45</id></result>
+POST /Rest_NEPTUN/resources/MovieDatabase/movies
+Accept: application/xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>Interstellar</title><year>2014</year><director>Christopher Nolan</director><actor>Matthew McConaughey</actor><actor>John Lithgow</actor></movie>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><result><id>46</id></result>
+POST /Rest_NEPTUN/resources/MovieDatabase/movies
+Accept: application/json
+{"title":"Batman Begins","year":2005,"director":"Christopher Nolan","actor":["Christian Bale"]}
+{"id":47}
+POST /Rest_NEPTUN/resources/MovieDatabase/movies
+Accept: application/json
+{"title":"The Dark Knight","year":2008,"director":"Christopher Nolan","actor":["Christian Bale","Heath Ledger"]}
+{"id":48}
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621901
+Accept: application/xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>The Imitation Game</title><year>2014</year><director>Morten Tyldum</director></movie>	
+
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/4621901
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>The Imitation Game</title><year>2014</year><director>Morten Tyldum</director></movie>
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621902
+Accept: application/json
+{"title":"American Sniper","year":2014,"director":"Clint Eastwood"}
+
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/4621902
+Accept: application/json
+
+{"title":"American Sniper","year":2014,"director":"Clint Eastwood","actor":[]}
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621901
+Accept: application/xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>The Imitation Game</title><year>2014</year><director>Morten Tyldum</director><actor>Benedict Cumberbatch</actor><actor>Keira Knightley</actor></movie>
+
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/4621901
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>The Imitation Game</title><year>2014</year><director>Morten Tyldum</director><actor>Benedict Cumberbatch</actor><actor>Keira Knightley</actor></movie>
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621902
+Accept: application/json
+{"title":"American Sniper","year":2014,"director":"Clint Eastwood","actor":["Bradley Cooper","Kyle Gallner"]}
+
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/4621902
+Accept: application/json
+
+{"title":"American Sniper","year":2014,"director":"Clint Eastwood","actor":["Bradley Cooper","Kyle Gallner"]}
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/4621901
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>The Imitation Game</title><year>2014</year><director>Morten Tyldum</director><actor>Benedict Cumberbatch</actor><actor>Keira Knightley</actor></movie>
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/4621902
+Accept: application/json
+
+{"title":"American Sniper","year":2014,"director":"Clint Eastwood","actor":["Bradley Cooper","Kyle Gallner"]}
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/4621903
+Accept: application/xml
+HTTP/1.1 404 Not Found
+
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/4621904
+Accept: application/json
+HTTP/1.1 404 Not Found
+
+GET /Rest_NEPTUN/resources/MovieDatabase/movies
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movies><movie><title>The Dark Knight</title><year>2008</year><director>Christopher Nolan</director><actor>Christian Bale</actor><actor>Heath Ledger</actor></movie><movie><title>American Sniper</title><year>2014</year><director>Clint Eastwood</director><actor>Bradley Cooper</actor><actor>Kyle Gallner</actor></movie><movie><title>The Imitation Game</title><year>2014</year><director>Morten Tyldum</director><actor>Benedict Cumberbatch</actor><actor>Keira Knightley</actor></movie><movie><title>Inception</title><year>2010</year><director>Christopher Nolan</director><actor>Leonardo DiCaprio</actor></movie><movie><title>Interstellar</title><year>2014</year><director>Christopher Nolan</director><actor>Matthew McConaughey</actor><actor>John Lithgow</actor></movie><movie><title>Batman Begins</title><year>2005</year><director>Christopher Nolan</director><actor>Christian Bale</actor></movie></movies>
+GET /Rest_NEPTUN/resources/MovieDatabase/movies
+Accept: application/json
+
+{"movie":[{"title":"The Dark Knight","year":2008,"director":"Christopher Nolan","actor":["Christian Bale","Heath Ledger"]},{"title":"American Sniper","year":2014,"director":"Clint Eastwood","actor":["Bradley Cooper","Kyle Gallner"]},{"title":"The Imitation Game","year":2014,"director":"Morten Tyldum","actor":["Benedict Cumberbatch","Keira Knightley"]},{"title":"Inception","year":2010,"director":"Christopher Nolan","actor":["Leonardo DiCaprio"]},{"title":"Interstellar","year":2014,"director":"Christopher Nolan","actor":["Matthew McConaughey","John Lithgow"]},{"title":"Batman Begins","year":2005,"director":"Christopher Nolan","actor":["Christian Bale"]}]}
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621901
+Accept: application/xml
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621902
+Accept: application/json
+
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621905
+Accept: application/xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>The Hunger Games: Catching Fire</title><year>2013</year><director>Francis Lawrence</director><actor>Jennifer Lawrence</actor></movie>
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621906
+Accept: application/xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>Elysium</title><year>2013</year><director>Neill Blomkamp</director><actor>Matt Daemon</actor></movie>
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621907
+Accept: application/xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>Frozen</title><year>2013</year><director>Chris Buck</director></movie>
+
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/find?year=2013&orderby=Director HTTP/1.1
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movies><id>4621907</id><id>4621905</id><id>4621906</id></movies>
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621905
+Accept: application/xml
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621906
+Accept: application/xml
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621907
+Accept: application/xml
+
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621908
+Accept: application/json
+{"title":"The Hunger Games: Catching Fire","year":2013,"director":"Francis Lawrence","actor":["Jennifer Lawrence"]}
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621909
+Accept: application/json
+{"title":"Elysium","year":2013,"director":"Neill Blomkamp","actor":["Matt Daemon"]}
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621910
+Accept: application/json
+{"title":"Frozen","year":2013,"director":"Chris Buck"}
+
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/find?year=2013&orderby=Director HTTP/1.1
+Accept: application/json
+
+{"id":[4621910,4621908,4621909]}
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621908
+Accept: application/json
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621909
+Accept: application/json
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621910
+Accept: application/json
+
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621911
+Accept: application/xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>The Hunger Games: Catching Fire</title><year>2013</year><director>Francis Lawrence</director><actor>Jennifer Lawrence</actor></movie>
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621912
+Accept: application/xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>Elysium</title><year>2013</year><director>Neill Blomkamp</director><actor>Matt Daemon</actor></movie>
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621913
+Accept: application/xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movie><title>Frozen</title><year>2013</year><director>Chris Buck</director></movie>
+
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/find?year=2013&orderby=Title HTTP/1.1
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><movies><id>4621912</id><id>4621913</id><id>4621911</id></movies>
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621911
+Accept: application/xml
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621912
+Accept: application/xml
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621913
+Accept: application/xml
+
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621914
+Accept: application/json
+{"title":"The Hunger Games: Catching Fire","year":2013,"director":"Francis Lawrence","actor":["Jennifer Lawrence"]}
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621915
+Accept: application/json
+{"title":"Elysium","year":2013,"director":"Neill Blomkamp","actor":["Matt Daemon"]}
+
+PUT /Rest_NEPTUN/resources/MovieDatabase/movies/4621916
+Accept: application/json
+{"title":"Frozen","year":2013,"director":"Chris Buck"}
+
+GET /Rest_NEPTUN/resources/MovieDatabase/movies/find?year=2013&orderby=Title HTTP/1.1
+Accept: application/json
+
+{"id":[4621915,4621916,4621914]}
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621914
+Accept: application/json
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621915
+Accept: application/json
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/4621916
+Accept: application/json
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/45
+Accept: application/xml
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/46
+Accept: application/xml
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/47
+Accept: application/xml
+
+
+DELETE /Rest_NEPTUN/resources/MovieDatabase/movies/48
+Accept: application/xml
+
